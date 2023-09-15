@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phase12</title>
+</head>
+<body>
+    <script>
+        var elements=0;
+        var somme=0;
+        do{
+        
+        var nombre=parseInt(window.prompt("Entrez les nombres à ranger dans le tableau, si fin de saisie alors entrez 0 :"));
+        elements++;
+        var tableau= new Array(elements);
+        var boite=boite+", "+nombre;
+        tableau[0]=[boite];
+        somme=somme+nombre;
+         }while(nombre!=0)
+         var moyenne=somme/elements;
+         tableau[0]=[boite+moyenne];
+         console.log(tableau);
+         alert(tableau);
+    </script>
+</body>
+</html>
